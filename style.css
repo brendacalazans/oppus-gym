@@ -1,0 +1,214 @@
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0;
+    font-family: "Public Sans", sans-serif;
+    font-size: 18px;
+}
+
+@font-face{
+    font-family: "Horta";
+
+    src: url("./assets/fonts/Horta\ demo.otf");
+}
+
+.logo {
+    margin: 0;
+    padding:0;
+    height: 30px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: black;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #28ff0d;
+}
+
+#avaliacao {
+    color: #1fcf09;
+}
+
+#avaliacao:hover{
+    color: #28ff0d;
+}
+
+#area-aluno{
+    border: 1px solid #1fcf09;
+    background-color: white;
+    color: black;
+}
+
+#area-aluno:hover{
+    border: 1px solid #1fcf09;
+    background-color: #1fcf09;
+    color: white;
+}
+
+#area-aluno:hover > *{
+    fill: white;
+}
+
+.background-container{
+    background-image: url('./assets/images/halteres.png');
+    background-size: cover; 
+    background-position: center;
+    height: 9ME0vh; 
+    width: 100%;
+}
+
+#apres-text {
+    color: white;
+}
+
+#apres-text > h1{
+    font-family:"Big Shoulders Display", sans-serif;
+}
+
+#apres-text > p{
+    margin-top: 80px;
+}
+
+.apres-button:hover{
+    border: 1px solid #28ff0d;
+    background-color: #28ff0d;
+    color: white;
+}
+
+.award{
+    font-size: 20px;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.492);
+    display: flex;
+    height: 48px;
+    align-items: center;
+}
+
+.btn-aval{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    background-color: #1fcf09;
+}
+
+.triangle{
+    height: 30rem;
+}
+
+
+
+.treinos{
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.treinos h2{
+    padding-left: 2.5rem;
+}
+
+.treinos-card{
+    height: 30rem;
+    width: 21rem;
+}
+
+.treinos-img{
+    height: 80%;
+    width: 100%;
+}
+
+.treinos-text{
+    display: flex;
+    align-items: center;
+}
+
+.treinos-text h3{
+    font-family: "Horta", "Public Sans", sans-serif;
+    font-size: 2rem;
+}
+
+.treinos-container > h2{
+    font-size: 3rem;
+}
+
+.planos{
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6FF15E;
+}
+
+.planos-card{
+    height: 30rem;
+    width: 21rem;
+    text-align: left;
+}
+
+h4{
+    font-family: "Horta", "Public Sans", sans-serif;
+    font-size: 2rem;
+}
+
+.planos-title{
+    font-size: 3.2rem;
+    font-weight: 800;
+}
+
+.planos-description > p{
+    font-size: 14px;
+    margin-bottom: 3rem;
+}
+
+.planos-list{
+    padding-left: 15%;
+}
+
+.planos-buttons{
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+}
+
+.planos-arrow {
+    border-radius: 100%;
+    margin-right: 10px;
+    background-color: #1fcf09;
+    height: 40px;
+    width: 40px;
+}
+
+.planos-svg{
+    position: absolute;
+    transform: translate(-48%, -48%); 
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: "Horta", "Public Sans", sans-serif;
+}
+
+.negrito{
+    font-weight: bold;
+}
+
+.negrito-verde{
+    font-weight: bold;
+    color: #1fcf09;
+}
+
+.sobre-text {
+    text-align: justify;
+}
+
+.sobre-img{
+    width: 450px;
+    border-radius: 13%;
+    margin-right: 5rem;
+}
