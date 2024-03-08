@@ -1,3 +1,4 @@
+/* Geral */
 * {
     padding:0;
     margin:0;
@@ -13,6 +14,8 @@
 
     src: url("./assets/fonts/Horta\ demo.otf");
 }
+
+/* NavBar */
 
 .logo {
     margin: 0;
@@ -52,24 +55,29 @@
     fill: white;
 }
 
+/* Apresentação */
+
 .background-container{
     background-image: url('./assets/images/halteres.png');
     background-size: cover; 
     background-position: center;
-    height: 9ME0vh; 
+    min-height: 300px; 
     width: 100%;
 }
 
 #apres-text {
     color: white;
+    padding: 0 20px; 
+    text-align: left;
 }
 
 #apres-text > h1{
     font-family:"Big Shoulders Display", sans-serif;
+    font-size: 2.5rem;
 }
 
 #apres-text > p{
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .apres-button:hover{
@@ -95,25 +103,23 @@
 }
 
 .triangle{
-    height: 30rem;
-}
-
-
-
-.treinos{
-    height: 50rem;
     display: flex;
-    justify-content: center;
     align-items: center;
+    height: auto;
+    max-width: 100%;
 }
 
-.treinos h2{
-    padding-left: 2.5rem;
+/* Treinos */
+
+#treinos{
+    padding: 50px 0;
 }
 
 .treinos-card{
-    height: 30rem;
-    width: 21rem;
+    max-width: 100%; 
+    height: 25em; 
+    margin: 0 auto 20px; 
+    max-width: 19em;
 }
 
 .treinos-img{
@@ -123,30 +129,27 @@
 
 .treinos-text{
     display: flex;
-    align-items: center;
+    align-items: left;
 }
 
 .treinos-text h3{
     font-family: "Horta", "Public Sans", sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    text-align: left;
 }
 
-.treinos-container > h2{
-    font-size: 3rem;
-}
+/*planos*/
 
-.planos{
-    height: 50rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#planos{
+    padding: 50px 0;
     background-color: #6FF15E;
 }
 
 .planos-card{
-    height: 30rem;
-    width: 21rem;
+    height: 30em;
+    width: 21em;
     text-align: left;
+    min-height: 450px; 
 }
 
 h4{
@@ -189,6 +192,8 @@ h4{
     transform: translate(-48%, -48%); 
 }
 
+/* sobre */
+
 h2 {
     font-size: 3rem;
     font-family: "Horta", "Public Sans", sans-serif;
@@ -211,4 +216,15 @@ h2 {
     width: 450px;
     border-radius: 13%;
     margin-right: 5rem;
+}
+
+@media (max-width: 991px){
+    .background-container{
+        max-height: 100vh;
+        padding-top: 3rem;
+    }
+
+    .triangle{
+        visibility: hidden;
+    }
 }

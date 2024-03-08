@@ -2,305 +2,333 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oppus Gym</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oppus Gym</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <!--fonte - Big Shoulders Display-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!--fonte - Big Shoulders Display-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
-    <!--fonte - Public Sans-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!--fonte - Public Sans-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- cabeçalho -->
-    <section class="cabecalho">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
-            <div class="container">
+  <!-- cabeçalho -->
+  <header class="cabecalho">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+      <div class="container">
 
-                <a class="navbar-brand" href="#">
-                    <img class="logo" src="./assets/images/logo.png" alt="logo-oppus">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="./assets/images/logo.png" alt="logo-oppus">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Planos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Atividades</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#">Sobre Nós</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" id="avaliacao" href="#">Marque uma Avaliação</a>
-                        </li>
-                    </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#planos">Planos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#treinos">Atividades</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#sobre">Sobre Nós</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" id="avaliacao" href="#">Marque uma Avaliação</a>
+            </li>
+          </ul>
+          <a href="./area-aluno.html">
+           <button class="btn btn-outline-success" id="area-aluno" type="submit">
+            Área do Aluno
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#1fcf09" class="bi bi-arrow-right"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+            </svg>
+          </button> 
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-                    <button class="btn btn-outline-success" id="area-aluno" type="submit">
-                        Área do Aluno
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#1fcf09"
-                            class="bi bi-arrow-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </nav>
-    </section>
+  <!-- main -->
+  <main>
 
     <!-- apresentação -->
-    <section class="apresentacao">
-        <div class="background-container">
-            <div class="container-fluid py-5">
-                <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center px-5 py-5">
-                    <div class="col-lg-7 px-5" id="apres-text">
-                        <h1 class="display-5 fw-bold">Não deixe para amanhã o que você pode fazer hoje!</h1>
-                        <p class="lead mb-5">
-                          Venha descobrir nossa academia completa, com um cronograma <br />
-                          diversificado de aulas, uma ampla variedade de máquinas de exercício <br />
-                          e uma convidativa piscina. Experimente hoje mesmo!</p>
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-start-5">
-                            <span class="badge bg-secondary-light text-secondary-emphasis px-4 award mr-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#fbd043" class="bi bi-award-fill" viewBox="0 0 16 16">
-                                    <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z"/>
-                                    <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/>
-                                </svg>
-                                Best Gym SP 2024
-                            </span>
-                          <a>
-                            <button type="button" class="btn btn-lg px-4 me-md-2 btn-aval mx-3 apres-button">Marque uma Avaliação!</button>
-                          </a>
-                        </div>
-                      </div>
-                  <div class="col-10 col-sm-8 col-lg-5 py-0 px-0">
-                    <img src="./assets/images/triangulos.png" class="d-block img-fluid triangle" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-                  </div>
-                </div>
+    <section id="apresentacao">
+      <div class="background-container">
+        <div class="container-fluid py-5">
+          <div class="row align-items-center">
+            <div class="col-lg-7 px-5" id="apres-text">
+              <h1 class="display-5 fw-bold">Não deixe para amanhã o que você pode fazer hoje!</h1>
+              <p class="lead mb-4">
+                Venha descobrir nossa academia completa, com um cronograma
+                diversificado de aulas, uma ampla variedade de máquinas de exercício
+                e uma convidativa piscina. Experimente hoje mesmo!</p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <span class="badge bg-secondary-light text-secondary-emphasis px-3 px-md-4 award me-3 mb-2 mb-md-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#fbd043" class="bi bi-award-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z" />
+                    <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z" />
+                  </svg>
+                  Best Gym SP 2024
+                </span>
+                <a>
+                  <button type="button" class="btn btn-lg px-4 me-md-2 btn-aval mx-3 apres-button">Marque uma
+                    Avaliação!</button>
+                </a>
               </div>
+            </div>
+            <div class="col-lg-5 py-0 triangle">
+              <img src="./assets/images/triangulos.png" class="d-block img-fluid" alt="Bootstrap Themes" loading="lazy">
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- treinos -->
-    <section class="treinos">
-        <!-- conforme progresso do curso, instalar carrousel de cards com js-->
-        
-        <div class="container treinos-container">
-            <h2>Treinos</h2>
-            <div class="row justify-content-center py-5">
-                <div class="card col-lg-4 col-12 mx-3 treinos-card py-2 px-2">
-                    <img src="./assets/images/yoga.png" class="card-img-top rounded img-fluid treinos-img" alt="yoga">
-                    <div class="card-body treinos-text">
-                      <h3 class="card-title">YOGA</h3>
-                    </div>
-                </div>
-                <div class="card col-lg-4 col-12 mx-3 treinos-card py-2 px-2">
-                    <img src="./assets/images/musculacao.png" class="card-img-top rounded img-fluid treinos-img" alt="musculação">
-                    <div class="card-body treinos-text">
-                      <h3 class="card-title">MUSCULAÇÃO</h3>
-                    </div>
-                </div>
-                <div class="card col-lg-4 col-12 mx-3 treinos-card py-2 px-2">
-                    <img src="./assets/images/natacao.png" class="card-img-top rounded img-fluid treinos-img" alt="natação">
-                    <div class="card-body treinos-text">
-                      <h3 class="card-title">NATAÇÃO</h3>
-                    </div>
-                </div>
+    <section id="treinos">
+      <!-- conforme progresso do curso, instalar carrousel de cards com js-->
+      <div class="container-fluid treinos-container p-5">
+        <h2 class="pb-4">Treinos</h2>
+          <div class="row" id="treinos-linha">
+            <div class="col-lg-4 col-md-12 col-12">
+              <div class="card treinos-card py-2 px-2">
+            <img src="./assets/images/yoga.png" class="card-img-top rounded img-fluid treinos-img" alt="yoga">
+            <div class="pt-3 treinos-text">
+              <h3 class="card-title">YOGA</h3>
             </div>
+            </div>
+            </div>
+           <div class="col-lg-4 col-md-12 col-12">
+            <div class="card treinos-card py-2 px-2">
+            <img src="./assets/images/musculacao.png" class="card-img-top rounded img-fluid treinos-img"
+              alt="musculação">
+            <div class="pt-3 treinos-text">
+              <h3 class="card-title">MUSCULAÇÃO</h3>
+            </div>
+          </div>
+           </div>
+          
+           <div class="col-lg-4 col-md-12 col-12">
+            <div class="card treinos-card py-2 px-2">
+            <img src="./assets/images/natacao.png" class="card-img-top rounded img-fluid treinos-img" alt="natação">
+            <div class="pt-3 treinos-text">
+              <h3 class="card-title">NATAÇÃO</h3>
+            </div>
+          </div>
+           </div>
+          
         </div>
+      </div>
     </section>
 
     <!-- planos -->
-    <section class="planos pt-5">
-        <div clas="container planos-container">
-          <h2>Planos</h2>
-            <div class="row mb-3 py-5">
-                <div class="col">
-                  <div class="card mb-4 rounded-3 shadow-sm planos-card px-5">
-                    <div class="planos-card-header pt-5">
-                      <h4 class="my-0">GYMPASS</h4>
-                    </div>
-                    <div class="card-body p-0">
-                        <div class="planos-description ">
-                            <h1 class="card-title pricing-card-title planos-title">FREE<small class="text-body-secondary fw-light"></small></h1>
-                            <p>Oferece acesso a todas academias da Oppus no Brasil.</p>  
-                        </div>
-                     
-                      <ul class="list-unstyled mt-3 mb-4 planos-list">
-                        <li>100+ academias</li>
-                        <li>Aulas coletivas</li>
-                        <li>Descontos exclusivos</li>
-                        <li>Musculação e Yoga</li>
-                      </ul>
-                      <div class="container planos-buttons mt-5"> 
-                        <div class="col-9 mt-2 px-0">
-                          <p>Assine o GymPass</p>
-                        </div>
-                        <div class="col-3"> 
-                          <button type="button" class="btn btn-lg planos-arrow">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
-                            class="bi bi-arrow-right py-auto planos-svg" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-                            </svg>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+    <section id="planos">
+      <div class="container-fluid planos-container p-5">
+        <h2 class="pb-4">Planos</h2>
+        <div class="row">
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm planos-card px-5">
+              <div class="planos-card-header pt-5">
+                <h4 class="my-0">GYMPASS</h4>
+              </div>
+              <div class="card-body p-0">
+                <div class="planos-description ">
+                  <h1 class="card-title pricing-card-title planos-title">FREE<small
+                      class="text-body-secondary fw-light"></small></h1>
+                  <p>Oferece acesso a todas academias da Oppus no Brasil.</p>
                 </div>
-                <div class="col">
-                  <div class="card mb-4 rounded-3 shadow-sm planos-card px-5">
-                    <div class="planos-card-header pt-5">
-                      <h4 class="my-0">BASIC</h4>
-                    </div>
-                    <div class="card-body p-0">
-                        <div class="planos-description">
-                            <h1 class="card-title pricing-card-title planos-title">$70<small class="text-body-secondary fw-light"></small></h1>
-                            <p>Perfeito para uma rotina consistente e com qualidade.</p>  
-                        </div>
-                      <ul class="list-unstyled mt-3 mb-4 planos-list">
-                        <li>100+ academias</li>
-                        <li>Horário 24/7</li>
-                        <li>Profissionais exclusivos</li>
-                        <li>Avaliações mensais</li>
-                      </ul>
-                      <div class="container planos-buttons mt-5"> 
-                        <div class="col-9 mt-2 px-0">
-                          <p>Assine o Basic</p>
-                        </div>
-                        <div class="col-3"> 
-                          <button type="button" class="btn btn-lg planos-arrow">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
-                            class="bi bi-arrow-right planos-svg" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-                            </svg>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
+
+                <ul class="list-unstyled mt-3 mb-4 planos-list">
+                  <li>100+ academias</li>
+                  <li>Aulas coletivas</li>
+                  <li>Descontos exclusivos</li>
+                  <li>Musculação e Yoga</li>
+                </ul>
+                <div class="container planos-buttons mt-5">
+                  <div class="col-9 mt-2 px-0">
+                    <p>Assine o GymPass</p>
                   </div>
-                </div>
-                <div class="col">
-                  <div class="card mb-4 rounded-3 shadow-sm planos-card px-5">
-                    <div class="planos-card-header pt-5">
-                      <h4 class="my-0">PRO</h4>
-                    </div>
-                    <div class="card-body p-0">
-                        <div class="planos-description">
-                            <h1 class="card-title pricing-card-title planos-title">$150<small class="text-body-secondary fw-light"></small></h1>
-                            <p>Para os entusiastas, ratos de academia e buildbuilders.</p> 
-                        </div>
-                      <ul class="list-unstyled mt-3 mb-4 planos-list">
-                        <li>100+ academias</li>
-                        <li>Horário 24/7</li>
-                        <li>Personal Trainer</li>
-                        <li>Todas as modalidades</li>
-                      </ul>
-                      
-                      <div class="container planos-buttons mt-5"> 
-                        <div class="col-9 mt-2 px-0">
-                          <p>Assine o Pro</p>
-                        </div>
-                        <div class="col-3"> 
-                          <button type="button" class="btn btn-lg planos-arrow">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
-                            class="bi bi-arrow-right planos-svg" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-                            </svg>
-                          </button>
-                        </div>
-                      </div>
-                        
-                      
-                    </div>
+                  <div class="col-3">
+                    <button type="button" class="btn btn-lg planos-arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                        class="bi bi-arrow-right py-auto planos-svg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                      </svg>
+                    </button>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm planos-card px-5">
+              <div class="planos-card-header pt-5">
+                <h4 class="my-0">BASIC</h4>
+              </div>
+              <div class="card-body p-0">
+                <div class="planos-description">
+                  <h1 class="card-title pricing-card-title planos-title">$70<small
+                      class="text-body-secondary fw-light"></small></h1>
+                  <p>Perfeito para uma rotina consistente e com qualidade.</p>
+                </div>
+                <ul class="list-unstyled mt-3 mb-4 planos-list">
+                  <li>100+ academias</li>
+                  <li>Horário 24/7</li>
+                  <li>Profissionais exclusivos</li>
+                  <li>Avaliações mensais</li>
+                </ul>
+                <div class="container planos-buttons mt-5">
+                  <div class="col-9 mt-2 px-0">
+                    <p>Assine o Basic</p>
+                  </div>
+                  <div class="col-3">
+                    <button type="button" class="btn btn-lg planos-arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                        class="bi bi-arrow-right planos-svg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm planos-card px-5">
+              <div class="planos-card-header pt-5">
+                <h4 class="my-0">PRO</h4>
+              </div>
+              <div class="card-body p-0">
+                <div class="planos-description">
+                  <h1 class="card-title pricing-card-title planos-title">$150<small
+                      class="text-body-secondary fw-light"></small></h1>
+                  <p>Para os entusiastas, ratos de academia e buildbuilders.</p>
+                </div>
+                <ul class="list-unstyled mt-3 mb-4 planos-list">
+                  <li>100+ academias</li>
+                  <li>Horário 24/7</li>
+                  <li>Personal Trainer</li>
+                  <li>Todas as modalidades</li>
+                </ul>
+
+                <div class="container planos-buttons mt-5">
+                  <div class="col-9 mt-2 px-0">
+                    <p>Assine o Pro</p>
+                  </div>
+                  <div class="col-3">
+                    <button type="button" class="btn btn-lg planos-arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                        class="bi bi-arrow-right planos-svg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- sobre nós -->
-    <section class="sobre py-5">
-      <div class="container">
-        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+    <section id="sobre">
+      <div class="container-fluid py-5">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg sobre-linha">
           <div class="col-lg-7 pl-3 p-lg-5 pt-lg-3 sobre-text">
             <h2 class="fw-bold lh-1 text-body-emphasis">Sobre nós</h2>
             <p class="lead sobre-text my-5">
-              Localizada no coração de São Paulo, a <span class="lead negrito">Oppus</span> é a melhor<br />
-              escolha para quem busca <span class="lead negrito-verde">excelência em fitness</span>. Com <br />
-              <span class="lead negrito">instalações de ponta</span> e uma <span class="lead negrito">equipe dedicada</span>, oferecemos <br /> 
-              uma variedade de planos de assinatura adaptados às suas <br />
-              necessidades, desde o flexível Plano Gympass até o <br />
-              exclusivo Plano Pro.   <br />
-              Nosso compromisso vai além do comum, proporcionando <br />
-              <span class="lead negrito">orientação especializada</span> e um <span class="lead negrito">ambiente acolhedor</span> para <br />
-              ajudá-lo a alcançar seus objetivos. Junte-se à nossa <br />
-              comunidade vibrante e comece sua jornada para um corpo <br />
-              mais forte e uma <span class="lead negrito-verde">vida mais saudável</span> hoje mesmo na <br />
+              Localizada no coração de São Paulo, a <span class="lead negrito">Oppus</span> é a melhor
+              escolha para quem busca <span class="lead negrito-verde">excelência em fitness</span>. Com
+              <span class="lead negrito">instalações de ponta</span> e uma <span class="lead negrito">equipe
+                dedicada</span>, oferecemos
+              uma variedade de planos de assinatura adaptados às suas
+              necessidades, desde o flexível Plano Gympass até o
+              exclusivo Plano Pro.
+              Nosso compromisso vai além do comum, proporcionando
+              <span class="lead negrito">orientação especializada</span> e um <span class="lead negrito">ambiente
+                acolhedor</span> para
+              ajudá-lo a alcançar seus objetivos. Junte-se à nossa
+              comunidade vibrante e comece sua jornada para um corpo
+              mais forte e uma <span class="lead negrito-verde">vida mais saudável</span> hoje mesmo na
               <span class="leadnegrito">Oppus</span>.
             </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start my-5 my-lg-5">
               <span class="badge bg-secondary-light text-secondary-emphasis px-4 award mr-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#fbd043" class="bi bi-award-fill" viewBox="0 0 16 16">
-                    <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z"/>
-                    <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#fbd043" class="bi bi-award-fill"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z" />
+                  <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z" />
                 </svg>
                 Best Gym SP 2024
-            </span>
-          <a>
-            <button type="button" class="btn btn-lg px-4 me-md-2 btn-aval mx-3">Marque uma Avaliação!</button>
-          </a>
+              </span>
+              <a>
+                <button type="button" class="btn btn-lg px-4 me-md-2 btn-aval mx-3">Marque uma Avaliação!</button>
+              </a>
             </div>
           </div>
-          <div class="col-lg-5">
-              <img class="rounded-lg-3 sobre-img" src="./assets/images/academia.png" alt="" >
+          <div class="col-lg-5 pb-5">
+            <img class="rounded-lg-3 sobre-img" src="./assets/images/academia.png" alt="">
           </div>
         </div>
       </div>
     </section>
 
-    <!-- footer -->
-    <section class="footer">
-      <div class="container pt-5">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <p class="col-md-4 mb-0 text-body-secondary">© 2024 Company, Inc</p>
-      
-          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-            <img src="./assets/images/logo.png" alt="logo" class="logo">
-          </a>
-      
-          <ul class="nav col-md-4 justify-content-end">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Planos</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Atividades</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Sobre Nós</a></li>
-          </ul>
-        </footer>
-      </div>
-    </section>
+  </main>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container pt-5">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-body-secondary">© 2024 Company, Inc</p>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        <a href="/"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <img src="./assets/images/logo.png" alt="logo" class="logo">
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Planos</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Atividades</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Sobre Nós</a></li>
+        </ul>
+      </footer>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <script src="index.js"></script>
 </body>
 
 </html>
