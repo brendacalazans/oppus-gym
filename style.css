@@ -228,3 +228,53 @@ h2 {
         visibility: hidden;
     }
 }
+
+
+/* login - page ---------------------------------------------------------------------------- */
+
+.login-formatacao{
+    height: 90px;
+}
+
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-row{
+    max-width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.login-title{
+    font-family:"Big Shoulders Display", sans-serif;
+    font-size: 2.5rem;
+}
+
+.login-imagem{
+    height: 100%;
+    width: 100%;
+    padding-bottom: 0;
+    border-radius: .3rem 0 .3rem 0;
+}
+
+.login-campos{
+    max-width: 600px;
+    min-width: 200px;
+}
+
+.login-entrar-registrar{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 415px;
+}
+
+.login-button{
+    background-color: #1fcf09;
+    color: white;
+    width: 10rem;
+}
