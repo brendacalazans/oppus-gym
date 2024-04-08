@@ -3,9 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <title>Oppus App</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--fonte - Big Shoulders Display-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!--fonte - Public Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1>Parabéns!</h1>
-    <p>Está Funcionando!</p>
+    <header class="nav-bar">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid mx-5">
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="./assets/images/logo.png" alt="logo-oppus">
+                  </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">OPPUS</h5> 
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Treinos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sua academia
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Avaliações</a></li>
+                        <li><a class="dropdown-item" href="#">Aulas</a></li>
+                        <li><a class="dropdown-item" href="#">Horários</a></li>
+                        <li><a class="dropdown-item" href="#">Profissionais</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item item-botton">
+                        <a class="nav-link" href="#">Configurações</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+    <section class="dash">
+        <div class="grid-container">
+            <div class="grid-item grid-welcome">
+                <div class="grid-text">
+                    <h2>Olá, Fulano</h2>
+                    <h3>Seja Bem-vindo!</h3>
+                </div>
+                <div class="grid-img">
+
+                </div>
+            </div>
+	        <div class="grid-item grid-treinos">
+                <h2>Treinos</h2>
+                X/10
+            </div>
+	        <div class="grid-item grid-avaliacoes">
+                <h2>Avaliações</h2>
+                <h3>Faltam 5 dias para uma nova avaliação!</h3>
+            </div>
+            <div class="grid-item grid-avisos">
+                <h2>Avisos</h2>
+                Academia de Pinheiro interditada!
+            </div>
+            <div class="grid-item grid-ranking">
+                <h2>Ranking</h2>
+                1. Fulano
+                2. Ciclano
+                3. Otano
+            </div>
+	        <div class="grid-item grid-aulas">
+                <h2>Aulas</h2>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
 </body>
 </html>
